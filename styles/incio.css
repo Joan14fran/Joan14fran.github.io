@@ -1,0 +1,47 @@
+.section-ser{
+    margin: 2.2rem 0;  
+}
+.section-ser figure{
+    margin: 10px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 30%;
+}
+.section-ser figure img{
+    width: 100%;
+}
+figure figcaption{
+    display: none;
+    background-color: #D8D0B6;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 3%;
+}
+figure figcaption h3{
+    color: rgb(19, 19, 19);
+}
+.section-ser figure:hover figcaption{
+    display: block;
+}
+/* .section-ser figure:hover figcaption{
+    display: block;
+} */
+h2{
+    /* font-size: 200px; */
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.carousel-inner{
+    max-height: 39rem;
+    margin-top: 0rem;
+    margin-bottom: 6rem;
+    width: 80%;
+}
+.descripcion{
+    padding: 0rem 2rem;
+    align-items: center;
+}

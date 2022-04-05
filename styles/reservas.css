@@ -1,0 +1,71 @@
+.servicios{
+    display: flex;
+    margin: 10px 20px;
+    padding-left: 20px;
+}
+.servicios p{
+    margin: 2rem;
+    font-size: 40px;
+    padding: 20px;
+    margin: 0 6rem;
+}
+.servicios p:hover{
+    cursor: pointer;
+    background-color: #D8D0B6;
+    border-radius: 4px;
+}
+.active{
+    padding: 30px;
+}
+.form input{
+    padding: 1rem;
+    width: 45%;
+    display: inline-block;
+    margin: 20px;
+    border-radius:4px solid black;
+}
+.form .combo-box .tittle-box{
+    font-size: 2rem;
+    
+}
+.form .combo-box .form-check{
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 25px;
+}
+.form .combo-box .form-check input{
+    width: 0;   
+}
+.form .combo-box .form-check label{
+    font-size: 20px;
+}
+.content{
+    background-color: #ededed;
+    width: 90%;
+    /* margin: 0 auto; */
+    display: inline-block;
+    margin: 30px 70px;
+    border: 2px solid black;
+}
+.content h2{
+    text-align: center;
+}
+[data-content]{
+    display: none;
+}
+.active[data-content]{
+    display: block;
+}
+.fecha{
+    display: inline-block;
+    width: 45%;
+}
+.fecha input{
+    width: 61%;
+}
+.fecha label{
+    margin-left: 1.4rem;
+}
+
+

@@ -1,0 +1,28 @@
+.logo{
+    text-align:center;
+}   
+.sub a{
+    color:white;
+    background: rgb(36, 34, 34);
+    text-decoration:none;
+    padding:5px 10px;
+    font-size:13px;
+    font-family: arial, serif;
+    font-weight:bold;
+}   
+.Img{
+    width: 30%;
+}
+.Imj{
+    text-align: center;
+}
+img{
+    width: 20%;
+}
+p{
+    text-align: center;
+    font: small-caps 100%/200% serif;
+}
+body{
+    background-image: url(../img/abstract-56.png);
+}

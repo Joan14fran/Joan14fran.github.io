@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores</title>
+    <link rel="stylesheet" href="/styles/despachos.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://kit.fontawesome.com/1d159cd404.js" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+	<header class="header">
+    <div class="container logo-nav-container">
+        <a href="#" class="logo"><img src="/img/Logo Team Digital Yelmos.jpeg" alt=""></a>
+        <nav class="main-nav">
+            <ul class="list-main-nav">
+                <li class="nav-item"><a href="/view/viewsGerente/inicioVistaGerente.html">Inicio</a></li>
+                <li class="nav-item"><a href="/view/viewsGerente/despachos.html">Despachos</a></li>
+                <li class="nav-item"><a href="/view/viewsGerente/inventarios.html">Inventarios</a></li>
+                <li class="nav-item"><a href="/view/viewsGerente/eventos.html">Eventos</a></li> 
+                <li class="nav-item" id="sign-up"><a href="/view/viewsGerente/reservasLogin.html">Reservas</a></li>
+                <li class="nav-item"><a href="/view/viewsGerente/proveedores.html">Proveedor</a></li> 
+                <li class="nav-item"><a href="/view/viewsGerente/clientes.html">Cliente</a></li>
+				<a href="/index.html" class="icons-nav">
+					<i class="fa-solid fa-right-to-bracket"></i>
+				</a> 
+            </ul>
+        </nav>
+    </div>
+</header>
+	<main class="main">
+	<div class="container-xl">
+		<div class="table-responsive">
+			<div class="table-wrapper">
+				<div class="table-title">
+					<div class="row">
+						<div class="col-sm-5">
+							<h2><b>Proveedores</b></h2>
+						</div>
+						<div class="col-sm-7">
+							<a href="#editoEmployeeModal" class="btn btn-secondary" data-toggle="modal"><i class="fa-solid fa-circle-plus"></i> <span>Añadir nuevo Proveedor</span></a>
+							<a class="btn btn-primary" href="/view/404.html" role="button">Generar reporte</a>
+							<div class="btn-group" data-toggle="buttons">
+							
+								<label class="btn btn-success">
+									<input type="radio" name="status" value="active">Activo
+								</label>
+								<label class="btn btn-danger">
+									<input type="radio" name="status" value="expired">Bloqueado
+								</label>							
+							</div>						
+						</div>
+					</div>
+				</div>
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Tipo Proveedor</th>
+							<th>Nombres</th>
+							<th>Apellidos</th>
+                            <th>Email</th>
+                            <th>Numero Celular</th>
+							<th>Estado</th>
+							<th>Edit/Delete</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Material P.O.P</td>
+							<td>Sergio Stevens</td>                        
+							<td>Chisica Cruz </td>
+                            <td>sschisica@misena.edu.co</td>
+                            <td>3219663808</td>
+							<td><span class="status text-success">&bull;</span> Activo </td>
+							<td>
+								<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fa-solid fa-pen-to-square" data-toggle="tooltip" title="Edit"></i></a>
+								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="fa-solid fa-trash" data-toggle="tooltip" title="Delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Productos</td>
+							<td>Sergio Stevens</td>                        
+							<td>Chisica Cruz </td>
+                            <td>sschisica@misena.edu.co</td>
+                            <td>3219663808</td>
+							<td><span class="status text-success">&bull;</span> Activo</td>
+							<td>
+								<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fa-solid fa-pen-to-square" data-toggle="tooltip" title="Edit"></i></a>
+								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="fa-solid fa-trash" data-toggle="tooltip" title="Delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Mobiliario</td>
+							<td>Sergio Stevens</td>                        
+							<td>Chisica Cruz </td>
+                            <td>sschisica@misena.edu.co</td>
+                            <td>3219663808</td>
+							<td><span class="status text-danger">&bull;</span> Bloqueado </td>                      
+							<td>
+								<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fa-solid fa-pen-to-square" data-toggle="tooltip" title="Edit"></i></a>
+								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="fa-solid fa-trash" data-toggle="tooltip" title="Delete"></i></a>
+							</td>                        
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Distribuidor Nacional</td>
+							<td>Sergio Stevens</td>                        
+							<td>Chisica Cruz </td>
+                            <td>sschisica@misena.edu.co</td>
+                            <td>3219663808</td>
+							<td><span class="status text-success">&bull;</span> Activo</td>
+							<td>
+								<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fa-solid fa-pen-to-square" data-toggle="tooltip" title="Edit"></i></a>
+								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="fa-solid fa-trash" data-toggle="tooltip" title="Delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Mobiliario</td>
+							<td>Sergio Stevens</td>                        
+							<td>Chisica Cruz </td>
+                            <td>sschisica@misena.edu.co</td>
+                            <td>3219663808</td>
+							<td><span class="status text-danger">&bull;</span> Bloqueado </td>                      
+							<td>
+								<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fa-solid fa-pen-to-square" data-toggle="tooltip" title="Edit"></i></a>
+								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="fa-solid fa-trash" data-toggle="tooltip" title="Delete"></i></a>
+							</td>                        
+						</tr>
+					</tbody>
+				</table>
+				<div class="clearfix">
+					<div class="hint-text"></div>
+					<ul class="pagination">
+						<li class="page-item disabled"><a href="#">Anterior</a></li>
+						<li class="page-item active"><a href="#" class="page-link">1</a></li>
+						<li class="page-item"><a href="#" class="page-link">2</a></li>
+						<li class="page-item"><a href="#" class="page-link">3</a></li>
+						<li class="page-item"><a href="#" class="page-link">4</a></li>
+						<li class="page-item"><a href="#" class="page-link">5</a></li>
+						<li class="page-item"><a href="#" class="page-link">Siguiente</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="editEmployeeModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="signup-form">
+				<form action="/examples/actions/confirmation.php" method="post">
+					<h2>Editar Proveedor</h2>
+					<p>Editar datos de Proveedor</p>
+					<hr>
+					<div class="form-group">
+						<div class="row">
+							<div class="col"><input type="text" class="form-control" name="first_name" placeholder="Nombres " required="required"></div>
+							<div class="col"><input type="text" class="form-control" name="last_name" placeholder="Apellidos " required="required"></div>
+						</div>        	
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" name="first_name" placeholder="Email"required="required">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" name="first_name" placeholder="Celular"required="required">
+					</div>
+                    <div class="form-group"><select class="form-control" name="first_name" placeholder="Email"required="required">
+                        <option value=""> ESTADO</option>
+                        <option value="ACTIVO">◉ ACTIVO</option>
+                        <option value="BLOQUEADO">◉	BLOQUEADO</option>
+                    </select></div>
+                    <div class="form-group"><select class="form-control" name="first_name" placeholder="Email"required="required">
+                        <option value=""> TIPO</option>
+                        <option value="PRODUCTOS">◉ PRODUCTOS</option>
+                        <option value="DISTRIBUIDOR NACIONAL">◉	DISTRIBUIDOR NACIONAL</option>
+                        <option value="MATERIAL P.O.P">◉ MATERIAL P.O.P</option>
+                        <option value="MOBILIARIO">◉ MOBILIARIO</option>
+                    </select></div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-primary" data-dismiss="modal" value="Cancelar">
+						<input type="submit" class="btn btn-danger" value="Agregar">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="deleteEmployeeModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">						
+						<h4 class="modal-title ">Eliminar Proveedor</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">					
+						<p>¿Deseas elminar este proveedor?</p>
+						<p ><small>Esta accion no se puede deshacer</small></p>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+						<input type="submit" class="btn btn-danger" value="Eliminar">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="editoEmployeeModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="signup-form">
+					<form action="" method="post">
+						<h2>Agregar Proveedor</h2>
+						<p>Agregue datos de nuevo proveedor</p>
+						<hr>
+						<div class="form-group">
+							<div class="row">
+								<div class="col">
+									<input type="text" class="form-control" name="first_name" placeholder="Nombres" required="required">
+								</div>
+								<div class="col"><input type="text" class="form-control" name="last_name" placeholder="Apellidos" required="required"></div>
+							</div>        	
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" name="Telefono" placeholder="Telefono" required="required">
+						</div>
+						<div class="form-group">
+							<select type="text" class="form-control" id="inputPhone" placeholder="Tipo producto" required>
+								<option value="value1">Proveedor 1</option>
+								<option value="value2">Proveedor 2</option>
+								<option value="value3">Proveedor 3</option>
+							</select>
+						</div>
+						<div class="modal-footer">
+							<input type="button" class="btn btn-primary" data-dismiss="modal" value="Cancelar">
+							<input type="submit" class="btn btn-danger" value="Agregar">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</main>    
+</body>
+</html>
